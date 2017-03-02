@@ -22,7 +22,7 @@
 
 	<!-- エンティティのパッケージを指定 -->
     <mappers>
-        <package name="jp.ais.edu.mapper" />
+        <package name="jp.co.aisinfo.edu.dao.mapper" />
     </mappers>
 
 </configuration>

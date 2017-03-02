@@ -4,7 +4,7 @@ PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
 "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration >
-  <classPathEntry location="C:\AIS\workspace\AisEducation\WebContent\WEB-INF\lib\postgresql-9.4.1212.jre6.jar" />
+  <classPathEntry location="C:\AIS\workspace\education\WebContent\WEB-INF\lib\postgresql-9.4.1212.jre6.jar" />
     <!--
       生成するクラスオブジェクトにタイムスタンプを付与するかどうかを設定します。
       value="true" の場合は生成しません。
@@ -30,7 +30,7 @@ PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
        詳細は公式リファレンス参照
        http://mybatis.github.io/generator/configreference/javaModelGenerator.html
      -->
-    <javaModelGenerator targetPackage="jp.co.aisinfo.dao.model" targetProject="AisEducation" />
+    <javaModelGenerator targetPackage="jp.co.aisinfo.edu.dao.model" targetProject="education" />
 
     <!--
        SQL Mapperファイルの生成先を指定します。
@@ -40,7 +40,7 @@ PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
        詳細は公式リファレンス参照
        http://mybatis.github.io/generator/configreference/sqlMapGenerator.html
      -->
-    <sqlMapGenerator targetPackage="jp.co.aisinfo.dao.mapper" targetProject="AisEducation" />
+    <sqlMapGenerator targetPackage="jp.co.aisinfo.edu.dao.mapper" targetProject="education" />
 
     <!--
        Java Clientクラスの生成先を指定します。
@@ -66,7 +66,7 @@ PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
             MapperインターフェースクラスとMapperファイルのみ生成する。
             SQLを全部Mapperファイルで管理したい人向け。
      -->
-    <javaClientGenerator targetPackage="jp.co.aisinfo.dao.client" targetProject="AisEducation" type="XMLMAPPER" />
+    <javaClientGenerator targetPackage="jp.co.aisinfo.edu.dao.client" targetProject="education" type="XMLMAPPER" />
 
     <!--
      自動生成対象のテーブル名を[tableName]に指定する。
