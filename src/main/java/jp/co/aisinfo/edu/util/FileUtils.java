@@ -215,4 +215,19 @@ public class FileUtils {
 		}
 	}
 
+	/**
+	 * ファイル存在判定
+	 *
+	 * @param file 対象ファイルパス
+	 * @return　チェック結果(true:あり、false:なし)
+	 */
+	public static boolean checkBeforeFile(File file) {
+		if (file.exists()) {
+			if (file.isFile() && file.canWrite()) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 }
