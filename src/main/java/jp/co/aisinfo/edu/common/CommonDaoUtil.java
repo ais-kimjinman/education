@@ -66,28 +66,28 @@ public class CommonDaoUtil {
 	 *            バッチかどうか
 	 */
 	public static void init(final boolean isBatch) {
-		// DAOFactory.init(isBatch);
+		 DAOFactory.init(isBatch);
 	}
 
 	/**
 	 * commit
 	 */
 	public static void commit() throws Exception {
-		// DAOFactory.commit();
+		 DAOFactory.commit();
 	}
 
 	/**
 	 * rollback
 	 */
 	public static void rollback() throws Exception {
-		// DAOFactory.rollback();
+		 DAOFactory.rollback();
 	}
 
 	/**
 	 * close
 	 */
 	public static void close() throws Exception {
-		// DAOFactory.close();
+		 DAOFactory.close();
 	}
 
 }

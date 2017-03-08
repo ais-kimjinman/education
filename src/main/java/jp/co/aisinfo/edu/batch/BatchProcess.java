@@ -116,7 +116,7 @@ public abstract class BatchProcess {
 		// CommonDAO初期化：バッチ用
 		CommonDaoUtil.init(true);
 		// SqlSessionのオープン
-		//DAOFactory.getDAO().open();
+		// DAOFactory.getDAO().open();
 	}
 
 	/**
@@ -128,8 +128,9 @@ public abstract class BatchProcess {
 	private void readConfigFile() throws Exception {
 		String path = "";
 		try {
-			path = System.getProperty(Constant.CONFIG_PATH);
 			// 設定ファイルの読み込み
+			path = "C:\\AIS\\workspace\\education\\src\\main\\resources\\education.properties";
+			//path = System.getProperty(Constant.CONFIG_PATH);
 			ConfigLoader.init(path);
 		} catch (Exception e) {
 			comLog.error("設定ファイル読み込み中にエラーが発生しました[" + path + "]");
