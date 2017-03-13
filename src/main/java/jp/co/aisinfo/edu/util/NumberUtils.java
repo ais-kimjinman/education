@@ -17,6 +17,14 @@ public class NumberUtils {
 	public static final NumberFormat COST_FORMAT = new DecimalFormat("###,###,###,###,###");
 
 	/**
+	 * コンストラクタです。
+	 * インスタンス化禁止です。
+	 */
+	private NumberUtils() {
+	}
+
+
+	/**
 	 * 数値オブジェクトの比較（Nullセーフ）
 	 *
 	 * @param num1

@@ -35,6 +35,12 @@ public class StringUtils {
 	private static final String[] DEFAULT_SPLIT_STRING = { "。", "!", "\\?", "？", "！", "\r", "\n", "\r\n", "\t" };
 
 	/**
+	 * コンストラクタです。 インスタンス化禁止です。
+	 */
+	private StringUtils() {
+	}
+
+	/**
 	 * 文字列がNULLか空文字列かどうかのチェック
 	 *
 	 * @param str

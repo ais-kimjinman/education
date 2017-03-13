@@ -28,6 +28,13 @@ public class DateUtils {
 	/** 短い年号 */
 	public static final String NENGO_FORMAT_2 = "GGyy年 MM月 dd日";
 
+	/**
+	 * コンストラクタです。
+	 * インスタンス化禁止です。
+	 */
+	private DateUtils() {
+	}
+
 
 	/**
 	 * 基本日付のフォーマット

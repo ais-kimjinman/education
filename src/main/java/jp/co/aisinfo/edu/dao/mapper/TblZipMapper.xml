@@ -258,4 +258,11 @@
     truncate table public.tbl_zip
   </delete>
 
+  <select id="selectCursor" parameterType="jp.co.aisinfo.edu.dao.model.TblZip" resultMap="BaseResultMap">
+    select
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from public.tbl_zip
+  </select>
+
 </mapper>

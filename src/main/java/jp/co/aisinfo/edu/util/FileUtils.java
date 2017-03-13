@@ -20,6 +20,13 @@ import java.io.UnsupportedEncodingException;
 public class FileUtils {
 
 	/**
+	 * コンストラクタです。
+	 * インスタンス化禁止です。
+	 */
+	private FileUtils() {
+	}
+
+	/**
 	 * ファイルを削除します ディレクトリの場合、中身をまず削除し、確実に削除ができます。
 	 *
 	 * @param f

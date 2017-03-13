@@ -36,7 +36,7 @@ public class A10PG10B extends BatchProcess {
 	 */
 	private static final String BATCH_NAME = "郵便番号情報取込処理";
 	/**
-	 *
+	 *ファイル定数
 	 */
 	private static final String INPUT_FILE_NAME = "zip.temp.file.name";
 
@@ -75,7 +75,7 @@ public class A10PG10B extends BatchProcess {
 		InputStreamReader ireader = null;
 		CSVReader reader = null;
 
-		// ファイル読込件す
+		// ファイル読込件数
 		int dataReadCnt = 0;
 		// DB登録失敗件数
 		int dataRegOKCnt = 0;
